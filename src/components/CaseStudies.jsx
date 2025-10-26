@@ -38,7 +38,7 @@ export default function CaseStudies() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: i * 0.05 }}
-            className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-900/30 to-slate-900/70 p-6 backdrop-blur"
+            className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-900/30 to-slate-900/70 p-6 backdrop-blur transition-transform duration-300 hover:-translate-y-0.5"
           >
             <div className="absolute inset-0 opacity-60">
               <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-purple-500/20 blur-2xl" />
@@ -56,6 +56,7 @@ export default function CaseStudies() {
               </p>
               <p className="mt-3 text-sm text-white/75">{c.summary}</p>
             </div>
+            <div className="pointer-events-none absolute inset-0 rounded-2xl ring-0 ring-purple-300/0 transition duration-300 hover:ring-2 hover:ring-purple-300/20" />
           </motion.article>
         ))}
       </div>

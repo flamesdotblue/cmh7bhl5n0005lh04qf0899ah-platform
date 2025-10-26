@@ -22,14 +22,14 @@ export default function CTA() {
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
               <a
                 href="mailto:hello@fluxscale.co?subject=Growth%20Audit%20Request"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/15 px-5 py-3 font-medium text-white backdrop-blur transition hover:bg-white/20"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/15 px-5 py-3 font-medium text-white backdrop-blur transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400/60"
               >
                 <Rocket className="h-5 w-5 text-purple-200" />
                 Request Audit
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center rounded-xl border border-white/10 bg-slate-950/60 px-5 py-3 font-medium text-white/90 backdrop-blur transition hover:bg-slate-900/70"
+                className="inline-flex items-center rounded-xl border border-white/10 bg-slate-950/60 px-5 py-3 font-medium text-white/90 backdrop-blur transition hover:bg-slate-900/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60"
               >
                 Explore Services
               </a>

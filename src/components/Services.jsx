@@ -27,6 +27,7 @@ export default function Services() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What We Do</h2>
         <p className="mt-3 text-white/70">Tightly integrated media buying, creative, and analytics—designed for ecommerce velocity.</p>
       </div>
+
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
           <motion.div
@@ -35,7 +36,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: i * 0.05 }}
-            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_40px_-10px_rgba(59,130,246,0.25)] backdrop-blur"
+            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_40px_-10px_rgba(59,130,246,0.25)] backdrop-blur transition-transform duration-300 hover:-translate-y-0.5"
           >
             <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-blue-500/20 blur-2xl" />
             <div className="relative flex items-center gap-3">
@@ -45,6 +46,7 @@ export default function Services() {
               <h3 className="text-lg font-semibold">{s.title}</h3>
             </div>
             <p className="relative mt-3 text-sm leading-relaxed text-white/75">{s.desc}</p>
+            <div className="pointer-events-none absolute inset-0 rounded-2xl ring-0 ring-purple-300/0 transition duration-300 group-hover:ring-2 group-hover:ring-purple-300/20" />
           </motion.div>
         ))}
       </div>
